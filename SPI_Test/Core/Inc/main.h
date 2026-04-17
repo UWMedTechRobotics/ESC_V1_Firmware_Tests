@@ -57,6 +57,16 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define MOTOR_SPI_SELECT_RIGHT_Pin GPIO_PIN_4
+#define MOTOR_SPI_SELECT_RIGHT_GPIO_Port GPIOA
+#define MOTOR_SPI_CLK_Pin GPIO_PIN_5
+#define MOTOR_SPI_CLK_GPIO_Port GPIOA
+#define MOTOR_SPI_SLAVE_OUT_Pin GPIO_PIN_6
+#define MOTOR_SPI_SLAVE_OUT_GPIO_Port GPIOA
+#define MOTOR_SPI_SLAVE_INPUT_Pin GPIO_PIN_7
+#define MOTOR_SPI_SLAVE_INPUT_GPIO_Port GPIOA
+#define MOTOR_SPI_SELECT_LEFT_Pin GPIO_PIN_0
+#define MOTOR_SPI_SELECT_LEFT_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

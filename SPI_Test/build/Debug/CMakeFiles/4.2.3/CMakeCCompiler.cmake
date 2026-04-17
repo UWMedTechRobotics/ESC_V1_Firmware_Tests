@@ -23,9 +23,9 @@ set(CMAKE_C_COMPILER_ARCHITECTURE_ID "armv7")
 
 
 
-set(CMAKE_AR "C:/msys64/ucrt64/bin/ar.exe")
+set(CMAKE_AR "C:/Users/adria/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ar.exe")
 set(CMAKE_C_COMPILER_AR "C:/Users/adria/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ar.exe")
-set(CMAKE_RANLIB "C:/msys64/ucrt64/bin/ranlib.exe")
+set(CMAKE_RANLIB "C:/Users/adria/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ranlib.exe")
 set(CMAKE_C_COMPILER_RANLIB "C:/Users/adria/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ranlib.exe")
 set(CMAKE_LINKER "C:/Users/adria/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-g++.exe")
 set(CMAKE_LINKER_LINK "")

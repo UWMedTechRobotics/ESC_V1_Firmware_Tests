@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: I2C_Test
+# Project: SPI_Test
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling ASM files.
 
-rule ASM_COMPILER__I2C_Test_unscanned_Debug
+rule ASM_COMPILER__SPI_Test_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\Users\adria\AppData\Local\stm32cube\bundles\gnu-tools-for-stm32\14.3.1+st.2\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule ASM_COMPILER__I2C_Test_unscanned_Debug
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__I2C_Test_unscanned_Debug
+rule C_COMPILER__SPI_Test_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\Users\adria\AppData\Local\stm32cube\bundles\gnu-tools-for-stm32\14.3.1+st.2\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -34,7 +34,7 @@ rule C_COMPILER__I2C_Test_unscanned_Debug
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__I2C_Test_Debug
+rule C_EXECUTABLE_LINKER__SPI_Test_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Users\adria\AppData\Local\stm32cube\bundles\gnu-tools-for-stm32\14.3.1+st.2\bin\arm-none-eabi-gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
@@ -62,7 +62,7 @@ rule C_COMPILER__STM32_Drivers_unscanned_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\adria\AppData\Local\stm32cube\bundles\cmake\4.2.3+st.1\bin\cmake.exe --regenerate-during-build -SC:\Users\adria\Projects\ESC_V1_Firmware_Tests\I2C_Test -BC:\Users\adria\Projects\ESC_V1_Firmware_Tests\I2C_Test\build\Debug
+  command = C:\Users\adria\AppData\Local\stm32cube\bundles\cmake\4.2.3+st.1\bin\cmake.exe --regenerate-during-build -SC:\Users\adria\Projects\ESC_V1_Firmware_Tests\SPI_Test -BC:\Users\adria\Projects\ESC_V1_Firmware_Tests\SPI_Test\build\Debug
   description = Re-running CMake...
   generator = 1
 
@@ -79,7 +79,7 @@ rule CLEAN_ADDITIONAL
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = C:\PROGRA~1\NINJA-~1\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = C:\Users\adria\AppData\Local\stm32cube\bundles\ninja\1.13.2+st.1\bin\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -87,6 +87,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = C:\PROGRA~1\NINJA-~1\ninja.exe -t targets
+  command = C:\Users\adria\AppData\Local\stm32cube\bundles\ninja\1.13.2+st.1\bin\ninja.exe -t targets
   description = All primary targets available:
 
